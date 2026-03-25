@@ -1,54 +1,82 @@
+> 本笔记基于 Cambridge IGCSE Additional Mathematics (3rd edition) 课程内容整理，为个人学习总结，不替代原教材。所有概念定义均采用通用数学表述，未直接复制教材原文。
 # U1 – Function / Mapping
 
-Input $\rightarrow$ output is called **mapping**.
+## 1.1 Mapping
 
-- Algebraically (linear): $x \mapsto x + 1$  
-  Read as: *x is mapped to x + 1*.
-- **One-one** (one input, one output): **injective**, e.g. $f(x)=2x+1$.
-- **Many-one** (more inputs, one output): e.g. $f(x)=x^2$.
-- **One-many** (one input, more outputs): e.g. $f(x)=\pm\sqrt{x}$.
+In mathematics, a **mapping** takes an input and produces an output.
 
-## Definition of a function
+- Written algebraically: \( x \mapsto x + 1 \)  
+  Means: *x goes to x + 1*
 
-- A function maps each $x$ value to **exactly one** $y$ value for a defined set of input values.
-- One-one and many-one mappings are called functions.
+Mappings can be classified by how inputs and outputs are paired:
 
-It can be written as:
+| Type | Description | Example |
+|------|-------------|---------|
+| **One‑one (injective)** | Each input gives a different output | \( f(x) = 2x + 1 \) |
+| **Many‑one** | Different inputs can give the same output | \( f(x) = x^2 \) |
+| **One‑many** | One input gives more than one output | \( f(x) = \pm\sqrt{x} \) |
 
-$$
+---
+
+## 1.2 What is a function?
+
+A **function** is a special kind of mapping:
+
+> For every input value in the domain, there is **exactly one** output value.
+
+This means:
+- One‑one mappings ✅ are functions
+- Many‑one mappings ✅ are functions
+- One‑many mappings ❌ are **not** functions
+
+A function can be written in two common ways:
+
+\[
 f: x \mapsto x + 1,\quad x \in \mathbb{R}
-$$
+\]
 
-or
-
-$$
+\[
 f(x) = x + 1,\quad x \in \mathbb{R}
-$$
+\]
 
-Read as: *the function $f$ such that $x$ is mapped to $x+1$*.  
-$f(x)$ represents the output values for the function $f$.
+Both are read as: *“the function \( f \) sends \( x \) to \( x + 1 \)”*.
 
-## Composite functions
+The notation \( f(x) \) represents the output value of the function \( f \).
 
-A composite function is formed by applying one function to the result of another.
+---
 
-If you have two functions $f$ and $g$, the composite function $f \circ g$ (read as “$f$ composed with $g$”) is defined as
+## 1.3 Composite functions
 
-$$
+A composite function is made by **plugging one function into another**.
+
+If you have \( f \) and \( g \), the composite \( f \circ g \) (said *“f composed with g”*) means:
+
+\[
 (f \circ g)(x) = f(g(x))
-$$
+\]
 
-This means you first apply $g$ to $x$, then apply $f$ to the result.
+Order matters:
+- First, apply \( g \) to \( x \)
+- Then, apply \( f \) to the result
 
-- $f$ is the outer function; $g$ is the inner function.
-- In IG 0606 ADD, we often write $fg(x)$ instead of $f \circ g$.
-- Domain of $gf$: $\{x \in \text{dom } f \mid f(x) \in \text{dom } g\}$.
+In IGCSE 0606, you may see \( fg(x) \) instead of \( f \circ g \).
 
-## Modulus functions
+> For \( gf \) to exist:  
+> \[
+> \text{domain of } gf = \{ x \in \text{dom } f \mid f(x) \in \text{dom } g \}
+> \]
 
-- *Modulus* means *absolute value*.
-- $f(x)=|x|$ is a modulus function.
+---
 
+## 1.4 Modulus function
+
+The **modulus** (absolute value) function is written as \( f(x) = |x| \).
+
+- It turns negative numbers into positive ones
+- Graphically: draw \( y = f(x) \), then reflect the part below the \( x \)-axis upward
+
+For linear \( f(x) \), the modulus graph is V‑shaped.  
+(Quadratic, cubic, and trigonometric modulus graphs follow the same reflection rule.)
 ---
 
 1. Trigonometric Modulus Graphs y = |a sin(bx) + c|
@@ -77,17 +105,31 @@ Key points:
 - The period stays the same, but the peaks may become wider because negative parts are flipped up
 - The points where the original graph crossed the x-axis become cusps (sharp corners)
 
-## Graphs of $y=|f(x)|$ where $f(x)$ is linear
+---
 
-Steps:
-1. Draw the graph of the linear function.
-2. Reflect the part of the line that lies below the $x$-axis in the $x$-axis.
+## 1.5 Inverse function
 
-## Inverse function
+An inverse function \( f^{-1} \) **swaps** the domain and range of \( f \).
 
-- The inverse function $f^{-1}(x)$ swaps the domain and range.
-- A symmetric even function does **not** have an inverse (unless the domain is restricted).
-- Only one‑one functions have inverses.
+- Only one‑one functions have an inverse
+- A symmetric (even) function has no inverse unless its domain is restricted
+- The graphs of \( y = f(x) \) and \( y = f^{-1}(x) \) are mirror images across the line \( y = x \)
+
+## Composite functions
+
+A composite function is formed by applying one function to the result of another.
+
+If you have two functions $f$ and $g$, the composite function $f \circ g$ (read as “$f$ composed with $g$”) is defined as
+
+$$
+(f \circ g)(x) = f(g(x))
+$$
+
+This means you first apply $g$ to $x$, then apply $f$ to the result.
+
+- $f$ is the outer function; $g$ is the inner function.
+- In IG 0606 ADD, we often write $fg(x)$ instead of $f \circ g$.
+- Domain of $gf$: $\{x \in \text{dom } f \mid f(x) \in \text{dom } g\}$.
 
 ---
 

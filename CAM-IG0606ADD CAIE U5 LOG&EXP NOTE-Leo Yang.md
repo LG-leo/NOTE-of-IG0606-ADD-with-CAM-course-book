@@ -368,6 +368,75 @@ Thus \(f^{-1}(x) = \frac12 \ln x\).
 - **Example**: A population starts at 100 and triples every 2 hours. Find a formula and the population after 5 hours.  
   - \(P = 100 \cdot 3^{t/2}\) (because after 2 hours, multiply by 3)  
   - After 5 hours: \(P = 100 \cdot 3^{2.5} = 100 \cdot 3^{5/2} = 100 \cdot 3^2 \cdot \sqrt{3} = 900\sqrt{3}\)
+-# Supplement: Exponential/Logarithmic Equations with Parameters
+
+**Core idea**: Number of solutions → convert to number of intersection points of graphs, or to root distribution of a quadratic equation.
+
+────────────────────────────────
+## Method 1: Graphical Method
+────────────────────────────────
+
+**When to use**: The two sides of the equation have very different forms (e.g., exponential vs. line, logarithmic vs. line).
+
+**Steps**:
+1. Write the equation as \( f(x) = g(x) \), with the parameter appearing in one of them.
+2. Sketch the graph of the function without the parameter.
+3. Sketch the graph of the line (or curve) that contains the parameter; observe how the number of intersection points changes as the parameter varies.
+4. Find the **tangency** condition (critical case for a unique solution):
+   - Let the point of tangency be \((x_0, y_0)\).
+   - Slopes equal: \( f'(x_0) = g'(x_0) \).
+   - Function values equal: \( f(x_0) = g(x_0) \).
+5. Solve for the critical parameter value(s).
+6. From the sketch, determine the parameter range that matches the required number of solutions.
+
+**Example**: \( e^x = kx \) has exactly one solution. Find \( k \).
+
+- Tangency condition: let the tangency point be \((t, e^t)\).
+  \[
+  e^t = k t \quad \text{and} \quad e^t = k \quad (\text{derivative of } e^x \text{ is } e^x)
+  \]
+  From \( e^t = k \) and \( e^t = k t \), we get \( k = k t \) → \( t = 1 \).
+  Hence \( k = e^1 = e \).
+
+- For \( k > e \): no intersection.
+- For \( k = e \): one intersection (tangent).
+- For \( 0 < k < e \): two intersections.
+
+- **Answer**: \( k = e \).
+
+────────────────────────────────
+## Method 2: Discriminant Method (Substitution)
+────────────────────────────────
+
+**When to use**: The equation can be turned into a quadratic by a substitution, such as \( a^{2x} \) and \( a^x \), or \( (\log x)^2 \) and \( \log x \).
+
+**Steps**:
+1. Substitute: let \( t = a^x \) or \( t = \log x \). Note the domain of \( t \):
+   - If \( t = a^x \) (\( a > 0, a \neq 1 \)), then \( t > 0 \).
+   - If \( t = \log_a x \), then \( x = a^t \) (no extra restriction on \( t \) except that it is real).
+2. Obtain a quadratic equation in \( t \): \( A t^2 + B t + C = 0 \).
+3. Translate the condition on the original equation (“has solution”, “has unique solution”, etc.) into conditions on the roots of this quadratic.
+4. Use:
+   - Discriminant \( \Delta = B^2 - 4AC \):
+     - \( \Delta \ge 0 \) (real roots)
+     - \( \Delta = 0 \) (double root)
+     - \( \Delta < 0 \) (no real root)
+   - Vieta’s formulas: sum of roots \( = -B/A \), product \( = C/A \).
+   - Additional restrictions on the roots (e.g., positive, negative, within an interval).
+5. Solve for the parameter range.
+
+**Example**: \( 4^x - k \cdot 2^x + 1 = 0 \) has a solution. Find \( k \).
+
+- Let \( t = 2^x > 0 \). The equation becomes \( t^2 - k t + 1 = 0 \).
+- For a solution in \( x \), we need a real \( t > 0 \) that satisfies the quadratic.
+- Discriminant: \( \Delta = k^2 - 4 \ge 0 \) → \( k \ge 2 \) or \( k \le -2 \).
+- Product of roots = \( 1 > 0 \) → roots have the same sign.
+- Sum of roots = \( k > 0 \) → for positive roots we need \( k > 0 \).
+- Combine: \( k \ge 2 \).
+- **Answer**: \( k \ge 2 \).
+
+────────────────────────────────
+**Note**: Always verify boundary cases (endpoints, domain restrictions) after solving.
 
 ---
 

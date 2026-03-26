@@ -1,4 +1,4 @@
-# U5 – Logarithmic and Exponential Functions
+# U5 – Logarithmic and Exponential Functions[not classify with course book]
 
 ## 5.1 Definitions & Basic Properties
 

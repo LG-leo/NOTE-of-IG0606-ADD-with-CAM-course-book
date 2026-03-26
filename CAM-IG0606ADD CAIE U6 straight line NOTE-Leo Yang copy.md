@@ -7,7 +7,7 @@
 - Find the equation given two points  
 - Find the equation given a point and the slope (斜率)  
 
-**What the textbook lacks (教材缺失)**  
+**What the course book lacks (教材缺失)**  
 - Does not derive the two‑point form (两点式)  
 - Does not explain the geometry of zero slope (斜率为0) and undefined slope (斜率不存在)  
 - Does not mention the special case of a vertical line: \(x = a\)

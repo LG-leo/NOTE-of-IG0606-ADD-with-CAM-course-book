@@ -1,4 +1,6 @@
 # U5 – Logarithmic and Exponential Functions[not classify with course book]
+##This chapter purely tests comprehensive application. You must ensure that you master all the methods (adding steps, increasing complexity, adding conditions, and solving application problems (plus other units)). Application problems will be presented in a separate chapter
+
 
 ## 5.1 Definitions & Basic Properties
 
@@ -620,6 +622,182 @@ Thus \(x = 0\) or \(x = 2\).
 
 \[
 \log_{27} x = \frac{\log_3 x}{\log_3 27} = \frac{\log_3 x}{3} = \frac{1}{3} \log_3 x
+\]
+
+\[
+\lg\left(\frac{1}{10^n}\right) = \lg(10^{-n}) = -n \cdot \lg 10 = -n
+\]
+
+\[
+5e^{3x+4}=14 \implies e^{3x+4}=\frac{14}{5}
+\]  
+
+Take natural logarithms:  
+\[
+3x+4=\ln\left(\frac{14}{5}\right) \implies 3x=\ln\left(\frac{14}{5}\right)-4
+\]  
+\[
+x=\frac{\ln\left(\frac{14}{5}\right)-4}{3}
+\]  
+For a numerical value, \(\ln(2.8)\approx 1.0296\), so \(x\approx \frac{1.0296-4}{3}=\frac{-2.9704}{3}\approx -0.9901\).
+
+\[
+\log_a(\sqrt{2}) + \log_a 8 + \log_a\left(\frac{1}{2}\right) = \frac{1}{2}\log_a 2 + 3\log_a 2 - \log_a 2 = \left(\frac{1}{2}+3-1\right)\log_a 2 = \frac{5}{2}\log_a 2
+\]
+
+Convert each term to base 2:
+
+\[
+8^{q-1} = (2^3)^{q-1} = 2^{3(q-1)}
+\]
+\[
+2^{2p+1} \text{ remains as is}
+\]
+Right-hand side:
+\[
+4^7 = (2^2)^7 = 2^{14}
+\]
+
+Add the exponents on the left:
+\[
+3(q-1) + (2p+1) = 3q - 3 + 2p + 1 = 2p + 3q - 2
+\]
+
+Thus:
+\[
+2p + 3q - 2 = 14 \implies 2p + 3q = 16
+\]
+
+So the equation is \(2p + 3q = 16\). 
+
+\[
+(\log_2 r)(\log_r 2) = 1
+\]
+
+\[
+2e^{1-2y} = 3e^{3y+2}
+\]  
+Take natural logarithms on both sides:  
+\[
+\ln 2 + (1-2y) = \ln 3 + (3y+2)
+\]  
+Rearrange:  
+\[
+\ln 2 - \ln 3 + 1 - 2 = 3y + 2y
+\]  
+\[
+\ln\left(\frac{2}{3}\right) - 1 = 5y
+\]  
+\[
+y = \frac{\ln\left(\frac{2}{3}\right) - 1}{5}
+\]  
+Alternatively, \(y = -\frac{1 + \ln\frac{3}{2}}{5}\).
+
+---Mindlessly choose In if there is/are e.
+
+The equation must be in the form \(e^{\text{expression}} = \text{constant}\) (e.g., \(5e^{3x+4}=14\)) before taking \(\ln\) on both sides.
+
+If you have \(e^{A} = e^{B}\), simply set \(A = B\); you don't even need to take \(\ln\).
+
+For equations like \(a^{x} = b\) where the base is not \(e\), you can take either \(\lg\) or \(\ln\). Taking \(\ln\) works just as well, but you don’t get the convenience of “canceling” the base.
+
+### Equations reducible to quadratics (substitution method)
+
+When the equation contains terms like \(a^{2x}\) and \(a^x\), or \((\log x)^2\) and \(\log x\), let \(t = a^x\) or \(t = \log x\) to obtain a quadratic.
+
+**Example** (Cambridge IGCSE 0606 2014 Nov P1 Q4):  
+Solve \(5^{2x+1} - 5^{x+1} + 2 = 2\cdot5^x\).
+
+Let \(y = 5^x\). Then  
+\(5^{2x+1} = 5 \cdot 5^{2x} = 5y^2\),  
+\(5^{x+1} = 5y\), and the right side is \(2y\).
+
+The equation becomes \(5y^2 - 5y + 2 = 2y\) → \(5y^2 - 7y + 2 = 0\).  
+Factor: \((5y-2)(y-1)=0\) → \(y = \frac{2}{5}\) or \(y = 1\).  
+Back‑substitute:
+- \(5^x = 1\) → \(x = 0\)
+- \(5^x = \frac{2}{5}\) → \(x = \log_5\frac{2}{5} = \frac{\ln\frac{2}{5}}{\ln5}\) (exact form)
+
+**Note**: The resulting quadratic can be solved by factorisation (if possible) or the quadratic formula. In U2, we talk about this before.
+---
+Given
+\[
+\frac{\ln 8}{\ln(y-1)} = 3
+\]
+Multiply both sides by \(\ln(y-1)\) (noting \(y-1>0\) and \(y-1\neq1\) so that the logarithm is defined and the denominator is non‑zero):
+\[
+\ln 8 = 3\ln(y-1) = \ln\big((y-1)^3\big)
+\]
+Hence
+\[
+8 = (y-1)^3 \quad\Rightarrow\quad y-1 = 2 \quad\Rightarrow\quad y = 3
+\]
+Check the domain: \(y-1>0 \Rightarrow y>1\), and \(y-1\neq1 \Rightarrow y\neq2\).  
+\(y=3\) satisfies both, so it is the only solution.
+**Note**:To calculate by sequence, first find a quantity (for example, log_√b 9a), and then combine the pairs.
+---
+
+**New problem:**  
+Simplify  
+\[
+\log_a 4 + (\log_a \sqrt{b})\,(\log_{\sqrt{b}} 8a)
+\]  
+and write the result in the form \(c + d\log_a 4\).
+
+
+**Step 1:** Express \(\log_a \sqrt{b}\) using the power rule.  
+\[
+\log_a \sqrt{b} = \log_a b^{1/2} = \frac{1}{2}\log_a b
+\]
+
+**Step 2:** Use change of base for \(\log_{\sqrt{b}} 8a\).  
+\[
+\log_{\sqrt{b}} (8a) = \frac{\log_a (8a)}{\log_a \sqrt{b}}
+\]  
+Numerator: \(\log_a (8a) = \log_a 8 + \log_a a = \log_a 8 + 1\)  
+Denominator (from Step 1): \(\log_a \sqrt{b} = \frac{1}{2}\log_a b\)  
+So  
+\[
+\log_{\sqrt{b}} (8a) = \frac{\log_a 8 + 1}{\frac{1}{2}\log_a b} = \frac{2(\log_a 8 + 1)}{\log_a b}
+\]
+
+**Step 3:** Multiply the two logarithmic terms.  
+\[
+(\log_a \sqrt{b})(\log_{\sqrt{b}} 8a) = \left(\frac{1}{2}\log_a b\right) \cdot \left(\frac{2(\log_a 8 + 1)}{\log_a b}\right)
+\]  
+Cancel \(\log_a b\) and the factor \(2\):  
+\[
+= 1 \cdot (\log_a 8 + 1) = \log_a 8 + 1
+\]
+
+**Step 4:** Add the remaining \(\log_a 4\).  
+\[
+\log_a 4 + (\log_a \sqrt{b})(\log_{\sqrt{b}} 8a) = \log_a 4 + (\log_a 8 + 1) = \log_a 4 + \log_a 8 + 1
+\]
+
+**Step 5:** Combine \(\log_a 4 + \log_a 8\).  
+\[
+\log_a 4 + \log_a 8 = \log_a (4 \times 8) = \log_a 32
+\]  
+But \(\log_a 32 = \log_a (2^5) = 5\log_a 2\). However, the desired form is \(c + d\log_a 4\).  
+Note that \(\log_a 32 = \log_a (4^{5/2}) = \frac{5}{2}\log_a 4\) because \(4^{5/2} = (2^2)^{5/2} = 2^5 = 32\).  
+
+Thus:  
+\[
+\log_a 4 + \log_a 8 = \frac{5}{2}\log_a 4
+\]
+
+**Step 6:** Final expression:  
+\[
+\frac{5}{2}\log_a 4 + 1
+\]  
+So in the form \(c + d\log_a 4\), we have \(c = 1\), \(d = \frac{5}{2}\).
+
+---
+
+**Answer:**  
+\[
+\log_a 4 + (\log_a \sqrt{b})(\log_{\sqrt{b}} 8a) = 1 + \frac{5}{2}\log_a 4
 \]
 ---
 
